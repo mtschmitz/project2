@@ -3,6 +3,7 @@ Blogga::Application.routes.draw do
   root  'static_pages#home'
   match '/faq',    to: 'static_pages#faq',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
+  match '/blog',   to: 'static_pages#blog',   via: 'get'
   
   
   # The priority is based upon order of creation: first created -> highest priority.

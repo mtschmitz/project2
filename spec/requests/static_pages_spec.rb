@@ -3,20 +3,18 @@ require 'spec_helper'
 describe "Static pages" do
   subject { page }
 
-#    it "should have the right links on the layout" do
-#    visit root_path
-#    click_link "About"
-#    expect(page).to have_title(full_title('About Us'))
-#    click_link "Help"
-#    expect(page).to have_title(full_title('Help'))
-#    click_link "Contact"
-#    expect(page).to have_title(full_title('Contact'))
-#    click_link "Home"
-#    click_link "Sign up now!"
-#    expect(page).to have_title(full_title('Sign up'))
-#    click_link "sample app"
-#    expect(page).to have_title(full_title(''))
-#  end
+    it "should have the right links on the layout" do
+    visit root_path
+    click_link "About"
+    expect(page).to have_title(full_title('About'))
+    click_link "Blog"
+    expect(page).to have_title(full_title('Blog'))
+    click_link "FAQ"
+    expect(page).to have_title(full_title('FAQ'))
+    click_link "Home"
+    expect(page).to have_title(full_title(''))
+   
+  end
 
 
   shared_examples_for "all static pages" do
